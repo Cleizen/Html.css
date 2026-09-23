@@ -19,34 +19,31 @@
             }
             .sun {
                 position: absolute;
-                top: 19.9em;
-                left: 18.9em;
+                top: 13.8em;
+                left: 13.8em;
                 width: 10em;
                 height: 10em;
                 background-color: yellow;
                 border-radius: 100%;
                 box-shadow: 0 0 9em rgb(251, 255, 0);
             }
-            .earth,.moon{
+            .earth,.moon {
                 position: absolute;
                 border-style: solid;
-                border-color: rgb(255, 253, 253);
-                transparent;
-                transparent;
-                transparent;
-                border-width: 0.9em 0.9em 0 0;
+                border-color: rgba(255, 254, 254, 0.544);
+                border-width: 0.8em 0.8em 0 0;
                 border-radius: 100%;
             }
             .earth {
-                top: 5.5em;
-                left: 5.5em;
-                width: 35em;
-                height: 35em;
+                top: 5em;
+                left: 6em;
+                width: 30em;
+                height: 30em;
                 animation: orbit 36.6s Linear infinite;
             }
-            .moon{
-                top: 0;
-                right: 0;
+            .moon {
+                top: 1em;
+                right: 1em;
                 width: 8em;
                 height: 8em;
                 animation: orbit 4.7s Linear infinite;
@@ -55,20 +52,22 @@
             .moon::before {
                 content: '';
                 position: absolute;
-                border-radius: 60%;
+                border-radius: 50%;
             }
             .earth::before {
-                top: 3.8em;
-                right: 3.8em;
+                top: 1em;
+                right: 3em;
                 width: 4em;
                 height: 4em;
                 background-color: rgb(3, 248, 3);
             }
-            .moon: :before{
-                top: 1em;
-                right: 1em;
-                width: 2em;
-                background-color: white;
+            .moon::before{
+                top: 6.5em;
+                left: 7em;
+                right: 13em;
+                width: 3em;
+                height: 3em;
+                background-color: rgb(156, 152, 152);
             }
             @keyframes orbit {
                 to {
