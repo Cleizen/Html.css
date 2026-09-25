@@ -31,3 +31,11 @@ if (weatherForestcast === "rainy") {
 } else {
     console.log("é bom se PRECAVER")
 }
+
+//teste
+
+let fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+let newFruits = fruits.slice(-4, -1);
+
+console.log("resultado do slice(): ", newFruits); // Output: ['banana', 'cherry', 'date']
+
